@@ -9,6 +9,8 @@ export const HeaderContainer = styled.div`
     width: 100%;
     height: 80px;
     overflow: hidden;
+    padding: 0 3%;
+    
     
     border: 1px solid ${(props) => props.theme['blue-100']};
     
@@ -67,8 +69,7 @@ export const DivSocialMidia = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 50%;
+    /* width: 50%; */
 `
 
 export const ButtonSocialMidia = styled.button`
