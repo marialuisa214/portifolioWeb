@@ -18,29 +18,59 @@ export const BannerContainer = styled.div`
 
 const textMoving = keyframes`
         0% {
-            transform: translate(0,-50%);
+            transform: translate(0%);
         }
         100% {
-            transform: translate(-50%,-50%);
+            transform: translate(-100%);
+        }
+`
+const textMoving2 = keyframes`
+        0% {
+            transform: translate(100%);
+        }
+        100% {
+            transform: translate(0%);
         }
 `
 
 export const BannerText = styled.span`
     position: absolute;
+    width: 100vw;
     top: 50%;
-    white-space: nowrap;
     color: #fff;
-    font-size: 8em;
     line-height: 220px;
+    font-size: 10rem;
     font-family: "Tilt Neon", sans-serif;
     
-
     transform: translateX(-50%); 
-    animation: ${textMoving} 30s linear infinite;
-   
+    /* animation: ${textMoving} 5s linear infinite; */
+    
+    `
+export const TextOne = styled.div`
+    position: absolute;
+    z-index: 0;
+    white-space: nowrap;
+    animation: ${textMoving} 28s linear infinite;
+
+    span{
+        margin: 0 2rem;
+    }
 `
+export const TextTwo = styled.div`
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    white-space: nowrap;
+    animation: ${textMoving2} 28s linear infinite;
+
+    span{
+        margin: 0 2rem;
+    }
+`
+
 export const ImgMalu = styled.img`
     width: 360px;
     
-    
+    z-index: 1;
 `
