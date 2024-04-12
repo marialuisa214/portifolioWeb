@@ -5,24 +5,51 @@ import { SiStyledcomponents} from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { TbFileTypeTsx } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
-import { Container } from "./styles";
+import { Container, ContainerIcons, ContainerLabel,DivIcon } from "./styles";
 
 export function Tecnologias(){
-    return (
-        <div>
-            <Container>
-                <FaReact size={50}  color="#66A2FF" />
-                <TbFileTypeTsx size={50}  color="#66A2FF" />
-                <IoLogoJavascript size={50}  color="#66A2FF"/>
-                <MdOutlineCss size={60}  color="#66A2FF"/>
-                <BiLogoTailwindCss size={50}  color="#66A2FF" />
-                <SiStyledcomponents size={60}  color="#66A2FF" />
-                <GrMysql size={50}  color="#66A2FF"/>
-                <FaDocker size={50}  color="#66A2FF"/>
-                <FaJava size={50}  color="#66A2FF" />
-                {/* <FaGitAlt size={60}  color="#66A2FF" /> */}
+    return (<Container>
 
-            </Container>
-        </div>
+            <ContainerIcons>
+                <DivIcon labelContent="React Native - 1 Ano de experiencia">
+                    <FaReact size={50} />
+                </DivIcon>
+
+                <DivIcon labelContent="TypeScript - 1 Ano de experiencia">
+                    <TbFileTypeTsx size={50} />   
+                </DivIcon>
+                <DivIcon labelContent="JavaScript - 2 Anos de experiencia">
+                    <IoLogoJavascript size={50}/>
+                </DivIcon>
+
+                <DivIcon labelContent="JCSS - 2 Anos de experiencia">
+                    <MdOutlineCss size={60}/>
+                </DivIcon>
+
+                <DivIcon labelContent="Tailwind - 6 meses">
+                    <BiLogoTailwindCss size={50} />
+                </DivIcon>
+
+                <DivIcon labelContent="Styled-components - 1 Ano de experiencia">
+                    <SiStyledcomponents size={60} />
+                </DivIcon>
+
+                <DivIcon labelContent="Banco de Dados - aprendendo...">
+                    <GrMysql size={50}/>
+                </DivIcon>
+
+                <DivIcon labelContent="Docker - aprendendo...">
+                    <FaDocker size={50}/>
+                </DivIcon>
+
+                <DivIcon labelContent="Java - 3 Anos de experiencia">
+                    <FaJava size={50} />
+                </DivIcon>
+            <ContainerLabel className={'text'}>
+                
+            </ContainerLabel>
+            </ContainerIcons>
+
+    </Container>
     )
 }

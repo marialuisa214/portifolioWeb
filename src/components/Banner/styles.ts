@@ -33,6 +33,8 @@ const textMoving2 = keyframes`
         }
 `
 
+
+
 export const BannerText = styled.span`
     position: absolute;
     width: 100vw;

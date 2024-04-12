@@ -16,8 +16,8 @@ export const GlobalStyle = createGlobalStyle`
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #3922c3;
-    background-image: linear-gradient(151deg, #3922c3 11%, #020024 100%);
+    background-color: #020024;
+    background-image: linear-gradient(151deg, #3922c3 11%, #020024 100vw);
 
 
     color: ${(props) => props.theme['orange-300']};
