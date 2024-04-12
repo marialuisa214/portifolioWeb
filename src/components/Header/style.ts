@@ -26,12 +26,39 @@ export const Nav = styled.nav`
         justify-content: space-evenly;
         width: 100%;
         list-style: none;
+        
 
         a{
             text-decoration: none;
-            font-size: 20px;
-            font-family: 'Tilt-Neon', sans-serif;
+            font-size: 22px;
+            font-family: "Tilt Neon", sans-serif;
+            
             color: ${(props) => props.theme['white']};
+            
+            &:after{
+                content: '';
+                display: block;
+                padding: 1px;
+                border-bottom: 2px solid ${(props) => props.theme['blue-100']};
+                transform: scaleX(0);
+                transition: transform 0.3s;
+
+            }
+            &:hover:after{
+                transform: scaleX(1);
+                transition: transform 0.3s;
+            }
+
+            
+            &:focus{
+                box-shadow: none;
+            }
+            &:hover{
+            transition: all 0.3s;
+            padding-bottom: 4px;
+            transform: translateX(10px);
+            
+        }
         }
     }
 
@@ -54,4 +81,8 @@ export const ButtonSocialMidia = styled.button`
     border: 2px solid ${(props) => props.theme['blue-100']};
     opacity: 0.4;
     margin: 0 10px;
+    &:hover{
+        opacity: 0.8;
+        transition: all 0.3s;
+    }
 `

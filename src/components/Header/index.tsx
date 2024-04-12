@@ -11,9 +11,9 @@ export function Header(){
             
             <Nav>
                 <ul>
-                    <li><a href="#">Tecnologias</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">tecnologias</a></li>
+                    <li><a href="#">projetos</a></li>
+                    <li><a href="#">contato</a></li>
                 </ul>
             </Nav>
 
