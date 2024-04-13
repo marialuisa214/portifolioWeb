@@ -29,17 +29,16 @@ export const ProjectTemplate = styled.div<{cor: string}>`
   @media screen and (max-width: 550px){
     min-width: calc(100% - 46px) ;
   }
-
-
 `
 export const CarroselDiv = styled(Carousel)`
   height: 100%;
   width: 100%;
-  background-color: red;
   ul{
     height: 100%;
-
+  }
+  button{
+    background-color: ${(props) => props.theme['blue-200']};
+    opacity: 0.5;
+    border: none;
   }
 `
-
-

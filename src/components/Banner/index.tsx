@@ -1,7 +1,8 @@
 import { BannerContainer, BannerText, ImgMalu, TextOne,  TextTwo } from "./styles";
 import Malu from '../../assets/iconMalu.svg'
 import { Tecnologias } from "../Tecnologias";
-import { Projects } from "../projects";
+import { Projects } from "../Projects";
+import { AboutMe } from "../AboutMe";
 
 export function Banner(){
     return (<div>
@@ -29,6 +30,7 @@ export function Banner(){
         </BannerContainer>
         <Tecnologias />
         <Projects />
+        <AboutMe/>
     </div>
     )
 }
