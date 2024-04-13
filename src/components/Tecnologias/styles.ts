@@ -29,7 +29,7 @@ export const ContainerLabel = styled.div`
       &:before {
         position: absolute;
         left: 50%;
-        top: 78px;
+        top: 85px;
         transform: translate(-50%, -120%);
         padding: 0.3em;
         white-space: nowrap;
