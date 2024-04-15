@@ -60,9 +60,21 @@ export const ProjectImg = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-
   }
+`
 
+export const ProjectDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 14px;
+  strong{
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
 `
 
 export const CarroselDiv = styled(Carousel)`

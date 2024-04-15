@@ -12,38 +12,38 @@ export function Tecnologias(){
 
             <ContainerIcons>
                 <DivIcon labelContent="React Native - 1 Ano de experiencia">
-                    <FaReact size={50} />
+                    <FaReact />
                 </DivIcon>
 
                 <DivIcon labelContent="TypeScript - 1 Ano de experiencia">
-                    <TbFileTypeTsx size={50} />   
+                    <TbFileTypeTsx />   
                 </DivIcon>
                 <DivIcon labelContent="JavaScript - 2 Anos de experiencia">
-                    <IoLogoJavascript size={50}/>
+                    <IoLogoJavascript />
                 </DivIcon>
 
                 <DivIcon labelContent="JCSS - 2 Anos de experiencia">
-                    <MdOutlineCss size={60}/>
+                    <MdOutlineCss/>
                 </DivIcon>
 
                 <DivIcon labelContent="Tailwind - 6 meses">
-                    <BiLogoTailwindCss size={50} />
+                    <BiLogoTailwindCss />
                 </DivIcon>
 
                 <DivIcon labelContent="Styled-components - 1 Ano de experiencia">
-                    <SiStyledcomponents size={60} />
+                    <SiStyledcomponents  />
                 </DivIcon>
 
                 <DivIcon labelContent="Banco de Dados - aprendendo...">
-                    <GrMysql size={50}/>
+                    <GrMysql />
                 </DivIcon>
 
                 <DivIcon labelContent="Docker - aprendendo...">
-                    <FaDocker size={50}/>
+                    <FaDocker />
                 </DivIcon>
 
                 <DivIcon labelContent="Java - 3 Anos de experiencia">
-                    <FaJava size={50} />
+                    <FaJava />
                 </DivIcon>
             <ContainerLabel className={'text'}>
                 

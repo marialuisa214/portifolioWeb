@@ -1,4 +1,4 @@
-import { CarroselDiv, Container,ProjectContainer, ProjectExtra, ProjectImg } 
+import { CarroselDiv, Container,ProjectContainer, ProjectDescription, ProjectExtra, ProjectImg } 
 from './styles';
 import imgGato from '../../assets/image.png';
 
@@ -38,11 +38,11 @@ export function Projects() {
                         <ProjectImg>
                           <img src={imgGato} alt="" />
                         </ProjectImg>
-                        <div>
+                        <ProjectDescription>
                           <strong>{project}</strong>
                           <p>Descrição do projeto</p>
                           <p>tecnologias</p>
-                        </div>
+                        </ProjectDescription>
                         <div>
                           <button>git</button>
                         </div>
