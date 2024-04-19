@@ -1,6 +1,9 @@
-import { CarroselDiv, Container,ProjectContainer, ProjectDescription, ProjectExtra, ProjectImg } 
+import { CarroselDiv, Container,DivIcon,DivProjectDescription,DivTecnologias,ProjectContainer, ProjectDescription, ProjectExtra, ProjectImg, buttonGit } 
 from './styles';
 import imgGato from '../../assets/image.png';
+import { FaDocker, FaFigma, FaGithub, FaJava, FaReact } from "react-icons/fa";
+import { GoArrowUpRight } from 'react-icons/go';
+
 
 const responsive = {
     superLargeDesktop: {
@@ -13,11 +16,11 @@ const responsive = {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 700 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 699, min: 0 },
       items: 1
     }
   };
@@ -33,19 +36,34 @@ export function Projects() {
                     <ProjectContainer  key={index}>
                         <ProjectExtra>
                           <p>Orientção a Objetos</p>
-                          <button>figma</button>
+                          <button><FaFigma /></button>
                         </ProjectExtra>
                         <ProjectImg>
                           <img src={imgGato} alt="" />
                         </ProjectImg>
                         <ProjectDescription>
                           <strong>{project}</strong>
-                          <p>Descrição do projeto</p>
-                          <p>tecnologias</p>
+                          <DivProjectDescription>
+                            <p>Descrição do projeto, muita baboseira para testar como fica com palavras diferentes</p>
+                            <DivTecnologias>
+                              <DivIcon>
+                                <FaReact />
+                              </DivIcon>
+                              <DivIcon>
+                                <FaJava />
+                              </DivIcon>
+                              <DivIcon>
+                                <FaDocker />
+                              </DivIcon>
+                          </DivTecnologias>
+
+                        </DivProjectDescription>
                         </ProjectDescription>
-                        <div>
-                          <button>git</button>
-                        </div>
+                        <buttonGit>
+                          <FaGithub />
+                          <link> Git Hub</link>
+                          <GoArrowUpRight />
+                        </buttonGit>
                     </ProjectContainer>
                 ))}
             </CarroselDiv>
