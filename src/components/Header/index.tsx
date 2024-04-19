@@ -3,12 +3,11 @@
 import { ButtonSocialMidia, DivSocialMidia, HeaderContainer, ImgLogo, Nav} from './style';
 import maluLogo from '../../assets/logoMalu.svg'
 import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react';
-export function Header(){
 
+export function Header(){
     return (
         <HeaderContainer>
             <ImgLogo src={maluLogo} alt="logo" />
-            
             <Nav>
                 <ul>
                     <li><a href="#">tecnologias</a></li>
@@ -21,6 +20,9 @@ export function Header(){
                 <ButtonSocialMidia><LinkedinLogo size={20}  color="#01FEFE" weight="bold" /></ButtonSocialMidia>
                 <ButtonSocialMidia><GithubLogo size={20} color="#01FEFE" weight="bold" /></ButtonSocialMidia>
             </DivSocialMidia>
+            <div>
+                
+            </div>
             
             
         </HeaderContainer>
