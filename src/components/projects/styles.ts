@@ -117,7 +117,19 @@ div{
     /* background-color: red; */
   }
 `
-export const buttonGit = styled.button`
+export const ButtonGit = styled.button`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: inline-start;
+  width: 65%; 
+  height: 50px;
+  background-color: orange;
+  color: black;
+  opacity: 0.8;
+  gap: 10px;
+  border-radius: 6px;
+  font-size: 1.2rem;
 `
 
 export const CarroselDiv = styled(Carousel)`
@@ -154,19 +166,6 @@ export const CarroselDiv = styled(Carousel)`
       opacity: 1;
       padding: 0 10px;
       border-radius: 6px;
-    }
-    buttonGit{
-      display: flex;
-      float: inline-start;
-      width: 50%;
-      background-color: orange;
-      color: black;
-      background-color: orange;
-      opacity: 1;
-      padding: 10px;
-      gap: 10px;
-      border-radius: 6px;
-
     }
   }  
 `

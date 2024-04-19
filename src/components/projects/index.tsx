@@ -1,7 +1,7 @@
-import { CarroselDiv, Container,DivIcon,DivProjectDescription,DivTecnologias,ProjectContainer, ProjectDescription, ProjectExtra, ProjectImg, buttonGit } 
+import { ButtonGit, CarroselDiv, Container,DivIcon,DivProjectDescription,DivTecnologias,ProjectContainer, ProjectDescription, ProjectExtra, ProjectImg } 
 from './styles';
 import imgGato from '../../assets/image.png';
-import { FaDocker, FaFigma, FaGithub, FaJava, FaReact } from "react-icons/fa";
+import { FaDocker,  FaFigma,  FaGithub, FaJava, FaReact } from "react-icons/fa";
 import { GoArrowUpRight } from 'react-icons/go';
 
 
@@ -36,7 +36,7 @@ export function Projects() {
                     <ProjectContainer  key={index}>
                         <ProjectExtra>
                           <p>Orientção a Objetos</p>
-                          <button><FaFigma /></button>
+                          <div><FaFigma /></div>
                         </ProjectExtra>
                         <ProjectImg>
                           <img src={imgGato} alt="" />
@@ -59,11 +59,11 @@ export function Projects() {
 
                         </DivProjectDescription>
                         </ProjectDescription>
-                        <buttonGit>
+                        <ButtonGit>
                           <FaGithub />
-                          <link> Git Hub</link>
+                          <div>Git Hub</div>
                           <GoArrowUpRight />
-                        </buttonGit>
+                        </ButtonGit>
                     </ProjectContainer>
                 ))}
             </CarroselDiv>
