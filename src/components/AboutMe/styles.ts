@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  /* background:  ${(props) => props.theme['white']}; */
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   align-items: center;
@@ -10,8 +9,20 @@ export const Container = styled.div`
   padding: 12px 30px;
   img{
     width: 80%;
-    /* background:  ${(props) => props.theme['white']}; */
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 30px;
+    img{
+      margin-top: 30px;
+    }
+
+    
   }
 `
 export const TextContainer = styled.div`
