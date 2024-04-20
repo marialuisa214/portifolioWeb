@@ -4,6 +4,7 @@ import { Tecnologias } from "../Tecnologias";
 import { Projects } from "../Projects";
 import { AboutMe } from "../AboutMe";
 import { Academic } from "../Academic";
+import { Footer } from "../Footer";
 
 export function Banner(){
     return (<div>
@@ -34,6 +35,7 @@ export function Banner(){
         <Projects />
         <Academic />
         <AboutMe/>
+        <Footer />
     </div>
     )
 }

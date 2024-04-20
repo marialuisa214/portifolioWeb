@@ -23,6 +23,7 @@ export const TextContainer = styled.div`
   
   h1{
     font-family: "Tilt Neon", sans-serif;
+    letter-spacing: .1rem;
     font-size: 2rem;
     color: ${(props) => props.theme['white']};
     opacity: 0.8;
