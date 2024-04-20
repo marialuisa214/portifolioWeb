@@ -10,8 +10,9 @@ export function Banner(){
     return (<div>
 
         <BannerContainer>
+            <Paragrafo>Desenvolvedora Front-end
+            </Paragrafo>
             <ImgMalu src={Malu} alt="Malu" />
-            <Paragrafo>Desenvolvedora Front-End.</Paragrafo>
             <BannerText>
                 <TextOne>
                     <span>Desenvolvedora</span>

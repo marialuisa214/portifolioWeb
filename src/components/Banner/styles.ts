@@ -14,6 +14,7 @@ export const BannerContainer = styled.div`
 
     @media screen and (max-width: 1024px) {
         justify-content: center;
+        align-items : center;
         align-items: space-between;
         gap: 25px;
     }
@@ -23,23 +24,23 @@ export const BannerContainer = styled.div`
 
     }
 `
-export const Paragrafo = styled.p`
-    display: none;
-    font-size: 1.8rem;
-    color: ${props => props.theme["white"]};
-    font-family: "Tilt Neon", sans-serif;
-    @media screen and (max-width: 1024px) {
-        display: flex;
-        justify-content: center;
-        align-items: space-between;
-        gap: 25px;
-    }
+export const Paragrafo = styled.h1`
+display: none;
+@media screen and (max-width: 1024px) {
+  display: flex;
+  font-size: 2rem;
+  color: ${props => props.theme['blue-200']};
+  text-shadow: 0 2px 4px ${props => props.theme['blue-300']}, 0px -2px 1px white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+    font-size: 1.2rem;
 
-    @media screen and (max-width: 520px) {
-        gap: 30px;
-        font-size: 1.1rem;
+}
 
-    }
+
 `
 
 const textMoving = keyframes`
@@ -119,7 +120,7 @@ export const ImgMalu = styled.img`
     }
 
     @media screen and (max-width: 580px) {
-        width: 150px;
+        width: 100px;
 
     }
 `
