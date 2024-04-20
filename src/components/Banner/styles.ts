@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components'
 
-
 export const BannerContainer = styled.div`
     display: flex;
     position:relative;
@@ -24,19 +23,23 @@ export const BannerContainer = styled.div`
 
     }
 `
+
+
 export const Paragrafo = styled.h1`
 display: none;
 @media screen and (max-width: 1024px) {
   display: flex;
+  letter-spacing: .1rem;
   font-size: 2rem;
-  color: ${props => props.theme['blue-200']};
-  text-shadow: 0 2px 4px ${props => props.theme['blue-300']}, 0px -2px 1px white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: center;
+  font-family: "Tilt Neon", sans-serif;
+  background-image: linear-gradient(90deg, rgba(156,110,220,1) 0%, rgba(29,247,253,1) 50%, rgba(171,191,73,1) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  
 }
 @media screen and (max-width: 550px) {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
 
 }
 

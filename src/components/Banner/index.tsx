@@ -16,19 +16,19 @@ export function Banner(){
             <BannerText>
                 <TextOne>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                 </TextOne>
                 <TextTwo>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                     <span>Desenvolvedora</span>
-                    <span>Front-end</span>
+                    <span>Front-end. </span>
                 </TextTwo>
             </BannerText>
         </BannerContainer>
