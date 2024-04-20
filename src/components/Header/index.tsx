@@ -20,9 +20,6 @@ export function Header(){
                 <ButtonSocialMidia><LinkedinLogo size={20}  color="#01FEFE" weight="bold" /></ButtonSocialMidia>
                 <ButtonSocialMidia><GithubLogo size={20} color="#01FEFE" weight="bold" /></ButtonSocialMidia>
             </DivSocialMidia>
-            <div>
-                
-            </div>
             
             
         </HeaderContainer>

@@ -3,6 +3,7 @@ import Malu from '../../assets/iconMalu.svg'
 import { Tecnologias } from "../Tecnologias";
 import { Projects } from "../Projects";
 import { AboutMe } from "../AboutMe";
+import { Academic } from "../Academic";
 
 export function Banner(){
     return (<div>
@@ -31,6 +32,7 @@ export function Banner(){
         </BannerContainer>
         <Tecnologias />
         <Projects />
+        <Academic />
         <AboutMe/>
     </div>
     )
